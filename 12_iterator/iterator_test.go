@@ -1,6 +1,8 @@
 package iterator
 
-func ExampleIterator() {
+import "testing"
+
+func TestExampleIterator(t *testing.T) {
 	var aggregate Aggregate
 	aggregate = NewNumbers(1, 10)
 

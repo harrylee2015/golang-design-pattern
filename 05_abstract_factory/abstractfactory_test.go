@@ -1,11 +1,13 @@
 package abstractfactory
 
+import "testing"
+
 func getMainAndDetail(factory DAOFactory) {
 	factory.CreateOrderMainDAO().SaveOrderMain()
 	factory.CreateOrderDetailDAO().SaveOrderDetail()
 }
 
-func ExampleRdbFactory() {
+func TestExampleRdbFactory(t *testing.T) {
 	var factory DAOFactory
 	factory = &RDBDAOFactory{}
 	getMainAndDetail(factory)
@@ -14,7 +16,7 @@ func ExampleRdbFactory() {
 	// rdb detail save
 }
 
-func ExampleXmlFactory() {
+func TestExampleXmlFactory(t *testing.T) {
 	var factory DAOFactory
 	factory = &XMLDAOFactory{}
 	getMainAndDetail(factory)

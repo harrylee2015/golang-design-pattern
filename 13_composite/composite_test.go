@@ -1,6 +1,8 @@
 package composite
 
-func ExampleComposite() {
+import "testing"
+
+func TestExampleComposite(t *testing.T) {
 	root := NewComponent(CompositeNode, "root")
 	c1 := NewComponent(CompositeNode, "c1")
 	c2 := NewComponent(CompositeNode, "c2")

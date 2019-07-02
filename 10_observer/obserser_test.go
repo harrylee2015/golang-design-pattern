@@ -1,6 +1,10 @@
 package observer
 
-func ExampleObserver() {
+import (
+	"testing"
+)
+
+func TestExampleObserver(t *testing.T) {
 	subject := NewSubject()
 	reader1 := NewReader("reader1")
 	reader2 := NewReader("reader2")

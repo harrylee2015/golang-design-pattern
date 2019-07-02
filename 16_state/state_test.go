@@ -1,6 +1,8 @@
 package state
 
-func ExampleWeek() {
+import "testing"
+
+func TestExampleWeek(t *testing.T) {
 	ctx := NewDayContext()
 	todayAndNext := func() {
 		ctx.Today()

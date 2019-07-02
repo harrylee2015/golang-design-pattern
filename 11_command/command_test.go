@@ -1,6 +1,8 @@
 package command
 
-func ExampleCommand() {
+import "testing"
+
+func TestExampleCommand(t *testing.T) {
 	mb := &MotherBoard{}
 	startCommand := NewStartCommand(mb)
 	rebootCommand := NewRebootCommand(mb)

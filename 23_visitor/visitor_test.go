@@ -1,6 +1,8 @@
 package visitor
 
-func ExampleRequestVisitor() {
+import "testing"
+
+func TestExampleRequestVisitor(t *testing.T) {
 	c := &CustomerCol{}
 	c.Add(NewEnterpriseCustomer("A company"))
 	c.Add(NewEnterpriseCustomer("B company"))
@@ -12,7 +14,7 @@ func ExampleRequestVisitor() {
 	// serving individual customer bob
 }
 
-func ExampleAnalysis() {
+func TestExampleAnalysis(t *testing.T) {
 	c := &CustomerCol{}
 	c.Add(NewEnterpriseCustomer("A company"))
 	c.Add(NewIndividualCustomer("bob"))

@@ -7,6 +7,7 @@ func TestProxy(t *testing.T) {
 	sub = &Proxy{}
 
 	res := sub.Do()
+	t.Log(res)
 
 	if res != "pre:real:after" {
 		t.Fail()

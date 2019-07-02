@@ -1,6 +1,8 @@
 package memento
 
-func ExampleGame() {
+import "testing"
+
+func TestExampleGame(t *testing.T) {
 	game := &Game{
 		hp: 10,
 		mp: 10,
